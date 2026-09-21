@@ -12,5 +12,6 @@ namespace Core.Entities
         public uint Capasity { get; set; }
         public uint BaseRentalCost { get; set; }
 
+        public ICollection<Service> Servises { get; set; }
     }
 }

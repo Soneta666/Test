@@ -11,6 +11,8 @@ namespace Core.Entities
         public DateTime Date { get; set; }
         public uint During { get; set; }
 
+        public uint ConferenceHallId { get; set; }
+        public ICollection<Service> Services { get; set; }
 
     }
 }
