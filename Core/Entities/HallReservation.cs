@@ -12,6 +12,7 @@ namespace Core.Entities
         public uint During { get; set; }
 
         public uint ConferenceHallId { get; set; }
+        public ConferenceHall? ConferenceHall { get; set; }
         public ICollection<Service> Services { get; set; }
 
     }
