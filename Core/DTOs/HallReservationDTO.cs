@@ -14,6 +14,6 @@ namespace Core.DTOs
 
         public uint ConferenceHallId { get; set; }
         public ConferenceHallDTO? ConferenceHall { get; set; }
-        public ICollection<ServiceDTO> Services { get; set; }
+        public ICollection<ServiceDTO>? Services { get; set; }
     }
 }

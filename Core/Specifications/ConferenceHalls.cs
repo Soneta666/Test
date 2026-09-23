@@ -27,5 +27,15 @@ namespace Core.Spesifications
                     .Include(h => h.HallReservations);
             }
         }
+        public class ByCapacity : Specification<ConferenceHall>
+        {
+            public ByCapacity(uint capacity)
+            {
+                Query
+                    .Where(h => h.Capasity >= capacity)
+                    .Include(h => h.Services)
+                    .Include(h => h.HallReservations);
+            }
+        }
     }
 }

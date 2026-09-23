@@ -9,8 +9,10 @@ namespace Core.Interfaces
     {
         Task<IEnumerable<HallReservationDTO>> GetAll();
         Task<HallReservationDTO?> GetById(uint id);
-        Task<HallReservationDTO?> Create(HallReservationDTO dto);
+        Task<decimal> Create(HallReservationDTO dto);
         Task Update(HallReservationDTO dto);
         Task Delete(uint id);
+
+        Task<IEnumerable<HallReservationDTO>> GetSchedule(DateTime date);
     }
 }

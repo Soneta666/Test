@@ -18,8 +18,8 @@ namespace Core.Validators
                 .Must(x => x > 0);
 
             RuleFor(h => h.Date)
-                .LessThanOrEqualTo(DateTime.Today)
-                .WithMessage("Date cannot be later than today.");
+                .GreaterThanOrEqualTo(DateTime.Today)
+                .WithMessage("Date cannot be early than today.");
         }
     }
 }
