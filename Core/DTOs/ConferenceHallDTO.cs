@@ -13,6 +13,6 @@ namespace Core.DTOs
         public uint Capasity { get; set; }
         public uint BaseRentalCost { get; set; }
 
-        public ICollection<ServiceDTO> Servises { get; set; }
+        public ICollection<ServiceDTO>? Services { get; set; }
     }
 }

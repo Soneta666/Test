@@ -10,5 +10,9 @@ namespace Core.Entities
         public uint Id { get; set; }
         public string Name { get; set; }
         public uint Cost { get; set; }
+
+        public ICollection<ConferenceHall> ConferenceHalls { get; set; }
+        public ICollection<HallReservation> HallReservations { get; set; }
+
     }
 }
