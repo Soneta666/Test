@@ -13,7 +13,8 @@ namespace Core.Spesifications
             public GetAll()
             {
                 Query
-                    .Include(h => h.Services);
+                    .Include(h => h.Services)
+                    .Include(h => h.HallReservations);
             }
         }
         public class ById : Specification<ConferenceHall>
@@ -22,7 +23,8 @@ namespace Core.Spesifications
             {
                 Query
                     .Where(h => h.Id == id)
-                    .Include(h => h.Services);
+                    .Include(h => h.Services)
+                    .Include(h => h.HallReservations);
             }
         }
     }
